@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112776333-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112776333-2');
+    </script>
+    <title>Josh Warner - Music Player</title>
+    <meta name="keywords" content="prototype, animation, music, web, design, designer, develop, developer, front end, frontend, front-end, HTML, CSS, jQuery, freelance, Wellington, New Zealand, Josh, Warner, Josh Warner, Victoria University, graduate, qualified, cheap, fast, local">
+    <meta name="description" content="Next. is a playlist generator designed and developed to demonstrate my skills in UI and UX. The project is built using HTML, CSS and Jquery.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+    
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 260 260" enable-background="new 0 0 260 260" xml:space="preserve">
+                        <path d="M130,0C58.203,0,0,58.203,0,130s58.203,130,130,130s130-58.203,130-130S201.797,0,130,0z M27,130
+                            C27,73.206,73.206,27,130,27c9.201,0,18.121,1.22,26.614,3.494L78.454,219.146C47.716,201.304,27,168.026,27,130z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="mailto:hello@joshwarner.co?Subject=Enquiry" target="_top" class="link">Email</a></li>
+                <li><a href="pricing" class="link">Pricing</a></li>
+                <li><a href="index" class="link">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <article class="article">
+        
+        <div class="intro">
+            <span class="fade">
+                <h1>Web App Prototype</h1>
+                <div class="button desktop">
+                    <a href="https://joshuaryaan.github.io/Next./" target="_blank">
+                    View project
+                    </a>
+                </div>
+            </span>
+            <span class="fade">
+                <div class="heading">
+                    <h2>Next. Music Player</h2>
+                    <h3>An effortless playlist generator</h3>
+                    <div class="button mobile">
+                        <a href="https://joshuaryaan.github.io/Next./" target="_blank">
+                            View project
+                        </a>
+                    </div>
+                </div>
+                <p class="paragraph">This web app is limited to a small selection of tracks and the project serves as a demonstration of UI and development skills. Next. is a playlist generator designed to take the stress away from choosing the right song. An intentionally paired back interface presents the user with a balance of control and restraint.</p>
+            </span>
+            <span class="fade">
+                <img src="img/next_deliverable_playing.jpg" alt="Covering image for music player prototype" class="image">
+                <h4 class="date"><b>Published:</b> November 2017</h4>
+            </span>
+        </div>
+
+        <div class="main">
+            <span class="fade">
+                <h2>The Design Process</h2>
+                <p>A number of wireframes were considered each focusing on different aspects of the user experience (UX design). The three concepts were based around either; the current playing track (Focused), a lot of information and choice (Rich) or a small selection of upcoming options (Light). Pictured below are the two concepts &#8216;Focused&#8217; and &#8216;Rich&#8217;.</p>
+            </span>
+            <span class="fade">
+                <img src="img/next_wireframe_focused.jpg" alt="Wireframe of the Focused concept emphasising the current track" class="image">
+                <h4>Wireframe of the 'Focused' concept emphasising the current track.</h4>
+            </span>
+            <span class="fade">
+                <img src="img/next_wireframe_rich.jpg" alt="Rich concept giving the user a great deal of choice" class="image">
+                <h4>'Rich' concept giving the user a great deal of choice.</h4>
+            </span>
+            <span class="fade">    
+                <p>Below is the chosen wireframe, &#8216;Light&#8217;, which was most aligned with the original vision. The &#8216;Light&#8217; concept put the most emphasis on upcoming track options. Next. is designed as a tool that will disappear into the background of social settings making song selection a simple task, by displaying a selection of 4-6 songs the user has an amount of control without an overwhelming choice.</p>
+            </span>
+            <span class="fade">
+                <img src="img/next_wireframe_simplified.jpg" alt="The Light design which places an emphasis on upcoming tracks" class="image">
+                <h4>The chosen design 'Light' which places an emphasis on upcoming tracks.</h4>
+            </span>
+            <span class="fade">
+                <p>The last step before development was to produce a render to work from. This process allows for experimentation with type and scale to find visual balance within the UI. Often changes are made on the fly while developing however starting with a high resolution render keeps the project focused and moving in the right direction.</p>
+            </span>
+            <span class="fade">
+                <img src="img/next_render_light.jpg" alt="A static rendering of the chosen wireframe" class="image">
+                <h4>A static rendering of the chosen wireframe.</h4>
+            </span>
+            <span class="fade">
+                <h2>The Development Process</h2>
+                <p>As Next. is simply a prototype all that was required for development was HTML, CSS and jQuery. The two most complex parts of the project are the search functionality and the player itself. Search functionality is the only plugin used in the project (<a href="http://easyautocomplete.com/guide" alt="EasyAutocomplete" target="_blank">EasyAutocomplete</a> by &#321;ukasz Pawe&#322;czak) which suggests options of artists or track names. The result of the search is then compared to a list of options in HTML which contain custom attributes the jQuery uses to source audio files. The audio tag is hidden in favour of completely customised controls. Audio functionality is thanks to a <a href="https://blog.eduonix.com/web-programming-tutorials/learn-build-audio-player-using-html5/" alt="Audio player tutorial" target="_blank">helpful post</a> by Sabeer Shaikh for Eduonix.</p>
+            </span>
+            <span class="fade">
+                <img src="img/next_development.jpg" alt="Workflow. Populating an audio tag with an html list and jQuery" class="image">
+                <h4>Workflow: Populating an audio tag with an html list and jQuery.</h4>
+            </span>
+            <span class="fade">
+                <p>The fully functional <a href="https://joshuaryaan.github.io/Next./" target="_blank">prototype</a> is available for interaction. Below are a series of images displaying the functionality of the fully scalable product. The biggest learning curve for the project was the use of jQuery to manipulate or customise native HTML elements. A simple design at the outset eventually led to a few weeks of wrangling snippets of code until they worked together to create a seamless prototype.</p>
+            </span>
+            <span class="fade">
+                <img src="img/next_deliverable_search.jpg" alt="Landing page. Start a playlist search dialogue" class="image">
+                <h4>Landing page: "Start a playlist" search dialogue.</h4>
+            </span>
+            <span class="fade">
+                <img src="img/next_deliverable_playing.jpg" alt="Player. Upcoming tracks and audio controls" class="image">
+                <h4>Player: Upcoming tracks and audio controls.</h4>
+            </span>
+            <span class="fade">
+                <img src="img/next_deliverable_menu.jpg" alt="Menu. Any information that isn't essential in standby" class="image">
+                <h4>Menu: Any information that isn't essential in standby.</h4>
+            </span>
+            <span class="fade">
+                <img src="img/next_deliverable_mobile.jpg" alt="Mobile. A smaller scale view" class="image">
+                <h4>Mobile: A smaller view.</h4>
+            </span>
+            <span class="fade">
+                <div class="button lg_button">
+                    <a href="portfolio">
+                        <span class="text">Next project</span>
+                    </a>
+                </div>
+            </span>
+        </div>
+
+    </article>
+    
+    <div class="fullscreen"></div>
+    
+    <footer>
+        <div>
+            <a href="https://github.com/joshuaryaan" target="_blank">
+                <img src="img/icon_github.svg" alt="Github">
+            </a>
+            <a href="https://www.linkedin.com/in/joshwarnerco/" target="_blank">
+                <img src="img/icon_linkedin.svg" alt="Linkedin">
+            </a>
+            <a href="https://www.instagram.com/joshwarner.co/" target="_blank">
+                <img src="img/icon_instagram.svg" alt="Instagram">
+            </a>  
+        </div>
+        <div>
+            <img src="img/icon_up.svg" alt="^" class="top">
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>
